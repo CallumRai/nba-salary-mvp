@@ -3,7 +3,7 @@
 A linear neural network model to predict the salary and MVP vote share of NBA players from 1984-2017.
 
 ## Evaluating the model and example uses
-Can be found on the following notebook   [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/callumrai-nba-salary-mvp-e7kiyy6d/notebooks/results/Results%20Notebook.ipynb)
+Can be found on the following notebook   [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/callumrai-nba-salary-mvp-roxovpml/notebooks/results/Results%20Notebook.ipynb)
 
 ## Structure
 * Data
