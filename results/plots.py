@@ -541,11 +541,11 @@ def plot_player_mvp():
             text = f"Name: {names[ix]}\nTeam: {team[ix]}\nAge: {age[ix]}\n" \
                    f"Predicted Share: {round(pred_share[ix], 3)} ({pred_rank[ix]} in the league)\n" \
                    f"Actual Share: {round(actual_share[ix], 3)} ({actual_rank[ix]} in the league)\n" \
-                   f"Year: {years[ix]}"
+                   f"Year: {int(years[ix])}"
         else:
             text = f"Name: {names[ix]}\nTeam: {team[ix]}\nAge: {age[ix]}\n" \
                    f"Predicted Share: {round(pred_share[ix], 3)} ({pred_rank[ix]} in the league)\n" \
-                   f"Actual Share: {round(actual_share[ix], 3)}\nYear: {years[ix]}"
+                   f"Actual Share: {round(actual_share[ix], 3)}\nYear: {int(years[ix])}"
 
         return text
 

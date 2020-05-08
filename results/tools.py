@@ -42,7 +42,7 @@ def year_input(salary):
             if salary:
                 year = input("\nPlease enter a valid year between 1994 and 2019: ")
             else:
-                year = input("\nPlease enter a valid year between 1988 and 2019: ")
+                year = input("\nPlease enter a valid year between 1984 and 2019: ")
 
     return year
 
