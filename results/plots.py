@@ -16,7 +16,7 @@ def plot_salary():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get years to evaulate off only
     eval_df = df[df['year'] > 2017].copy()
@@ -89,7 +89,7 @@ def plot_mvp_eval(year):
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get years only
     year_df = df[df['year'] == year].copy()
@@ -170,7 +170,7 @@ def plot_mvp():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get user defined year
     year = year_input(False)
@@ -254,7 +254,7 @@ def plot_year_salary():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get user defined year
     year = year_input(True)
@@ -335,7 +335,7 @@ def plot_over_under_paid():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get user defined year
     year = year_input(True)
@@ -423,7 +423,7 @@ def plot_player_salary():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get name column
     df['name'] = df.apply(lambda row: row.name[:-5], axis=1)
@@ -491,7 +491,7 @@ def plot_player_mvp():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # get name column
     df['name'] = df.apply(lambda row: row.name[:-5], axis=1)
@@ -563,7 +563,7 @@ def plot_all_salary():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # drop rows where salary data isnt present
     blank_rows = df[df['salary'].isnull()].index.tolist()
@@ -630,7 +630,7 @@ def plot_2020():
     """
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results_2020.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results_2020.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # drop rows where mvp data isnt present
     blank_rows = df[df['pred_mvp_share'].isnull()].index.tolist()
@@ -688,7 +688,7 @@ def plot_all_mvp():
 
     # load data
     data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-    df = pd.read_csv(data_path + "\\predictions\\results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
+    df = pd.read_csv(data_path + "/predictions/results.csv.gz", encoding='utf-8-sig', compression='gzip', index_col=0)
 
     # drop rows where mvp data isnt present
     blank_rows = df[df['pred_mvp_share'].isnull()].index.tolist()
