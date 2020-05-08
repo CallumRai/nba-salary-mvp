@@ -46,3 +46,6 @@ torch == 1.2.0
 # C:\Users\Callum Rai\Documents\nba-git\train\salary\train.py: 8
 # C:\Users\Callum Rai\Documents\nba-git\train\salary\train_debug.py: 11
 numpy == 1.16.4
+
+ipympl==0.5.6
+
